@@ -2,7 +2,7 @@ var express = require('express'),
 	http = require('http'),
     socket = require('socket.io'),
     port = 80,
-    socketClient, server, io, app;
+    server, io, app;
 
 function emit(type, data) {
 	io.sockets.emit(type, data);
@@ -42,7 +42,7 @@ function openSockets() {
 app = express();
 server = http.createServer(app);
 server.listen(port);
-io = socket.listen(server, {log: false})
+io = socket.listen(server, {log: false});
 
 
 openSockets();
