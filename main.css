@@ -1,0 +1,33 @@
+html, body, #map_canvas {
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 5px;            
+}
+#statusBox {
+    display: none;
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    min-width: 150px;
+    z-index: 999;
+    background-color: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    opacity: 0.75;
+}
+
+#statusBox:hover {
+    opacity: 1;
+}
+
+#numbersInput {
+    width: 30px;
+    padding: 2px 3px;
+}

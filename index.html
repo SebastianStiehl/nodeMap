@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>RealTimeMap</title>
+    <link href="./main.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="map_canvas"></div>
+    <div id="statusBox">
+        <div>random objects</div>
+        <input type="text" id="numbersInput" value="5" maxlength="3" />
+        <input type="button" id="addButton" value="add" />
+        <input type="button" id="removeButton" value="remove" />
+        <div>Status</div>
+        <ul></ul>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./client.js"></script>
+</body>
+</html>
