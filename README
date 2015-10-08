@@ -1,5 +1,0 @@
-startup
->node ./server.js
-
-open with debug mode
-http://localhost/?debug=true
